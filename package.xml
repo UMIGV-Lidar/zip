@@ -1,0 +1,17 @@
+<package format = "2">
+	<name>zip</name>
+	<version>1.0.0</version>
+	<description>
+		Provides a zip function to zip two or three ranges together.
+	</description>
+	<maintainer email="gregjm@umich.edu">Gregory Meyer</maintainer>
+	<license>BSD 3-Clause License</license>
+
+	<url type="repository">https://github.com/UMIGV-Lidar/zip</url>
+	<author>Gregory Meyer</author>
+
+	<buildtool_depend>catkin</buildtool_depend>
+
+	<depend>roscpp</depend>
+	<depend>rosconsole</depend>
+</package>

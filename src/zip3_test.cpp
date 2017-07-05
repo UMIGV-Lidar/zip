@@ -13,21 +13,25 @@ int main(int argc, char *argv[]) {
 
 	std::vector<int> a = {0, 1, 2, 3};
 	std::string b = "hi friend";
+	std::vector<double> c = {10, 9, 8};
 
-	for (const auto &zipped : zip(a, b)) {
+	for (const auto &zipped : zip(a, b, c)) {
 		auto &first = std::get<0>(zipped);
 		auto &second = std::get<1>(zipped);
+		auto &third = std::get<2>(zipped);
 
-		ROS_INFO_STREAM("first = " << first << ", second = " << second);
+		ROS_INFO_STREAM("first = " << first << ", second = " << second << ", third = " << third);
 		
 		++first;
 		++second;
+		++third;
 	}
 
-	for (const auto &zipped : zip(a, b)) {
+	for (const auto &zipped : zip(a, b, c)) {
 		auto &first = std::get<0>(zipped);
 		auto &second = std::get<1>(zipped);
+		auto &third = std::get<2>(zipped);
 
-		ROS_INFO_STREAM("first = " << first << ", second = " << second);
+		ROS_INFO_STREAM("first = " << first << ", second = " << second << ", third = " << third);
 	}
 }

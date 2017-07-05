@@ -25,6 +25,9 @@ include_directories(
 add_executable(zip2_test src/zip2_test.cpp)
 target_link_libraries(zip2_test ${catkin_LIBRARIES})
 
+add_executable(zip3_test src/zip3_test.cpp)
+target_link_libraries(zip3_test ${catkin_LIBRARIES})
+
 install(
 	DIRECTORY include/${PROJECT_NAME}/
 	DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
